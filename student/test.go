@@ -1,9 +1,9 @@
 package main
 
 import (
-	student "./student"
+	student ".."
 )
 
 func main() {
-	student.Raid1a(5, 3)
+	student.Raid1c(5, 3)
 }
