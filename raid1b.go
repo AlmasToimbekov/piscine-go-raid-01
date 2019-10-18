@@ -14,7 +14,7 @@ func Raid1b(x, y int) {
 
 func printRowb(row int, x int, y int) {
 	for colomn := 0; colomn < x; colomn++ {
-		if colomn == 0 && row == 0 || colomn == x-1 && row == x-3 {
+		if colomn == 0 && row == 0 || colomn == x-1 && row == x-y {
 			z01.PrintRune('/')
 		} else if colomn == x-1 && row == 0 || colomn == 0 && row == y-1 {
 			z01.PrintRune('\\')
