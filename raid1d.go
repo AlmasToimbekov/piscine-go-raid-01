@@ -21,5 +21,4 @@ func printRowForD(row int, x int, y int) {
 			z01.PrintRune(' ')
 		}
 	}
-	z01.PrintRune(10)
 }
