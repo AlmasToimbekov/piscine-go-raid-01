@@ -17,6 +17,17 @@ func Raid1b(x, y int) {
 			}
 			z01.PrintRune(10)
 		}
+	} else if y == 1 {
+		for colomn := 0; colomn < x; colomn++ {
+			if colomn == 0 {
+				z01.PrintRune('/')
+			} else if colomn == x-1 {
+				z01.PrintRune('\\')
+			} else {
+				z01.PrintRune('*')
+			}
+		}
+		z01.PrintRune(10)
 	} else {
 		for row := 0; row < y; row++ {
 			printRowb(row, x, y)
