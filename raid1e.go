@@ -4,8 +4,10 @@ import "github.com/01-edu/z01"
 
 //Raid1e prints a valid square of width x and of height y
 func Raid1e(x, y int) {
-	for row := 0; row < y; row++ {
-		printRowForE(row, x, y)
+	if x > 0 && y > 0 {
+		for row := 0; row < y; row++ {
+			printRowForE(row, x, y)
+		}
 	}
 }
 
