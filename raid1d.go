@@ -4,8 +4,12 @@ import "github.com/01-edu/z01"
 
 //Raid1d prints a valid square of width x and of height y
 func Raid1d(x, y int) {
-	for row := 0; row < y; row++ {
-		printRowForD(row, x, y)
+	if x < 0 || y < 0 {
+
+	} else {
+		for row := 0; row < y; row++ {
+			printRowForD(row, x, y)
+		}
 	}
 }
 
